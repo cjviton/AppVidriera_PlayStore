@@ -1,0 +1,59 @@
+
+#El proyecto utiliza un único archivo .gitignore en la raíz del repositorio para proteger credenciales sensibles y artefactos de compilación de todos los subproyectos (frontend y backend).”
+# El repositorio contiene frontend móvil y dos APIs backend
+#Se utiliza un .gitignore unificado para: dependencias, binarios y claves privadas.
+#Se evita exponer credenciales de Google Cloud.
+
+# React Native / Expo standard ignores
+
+# Node modules
+node_modules/
+
+# Expo
+.expo/
+.expo-shared/
+
+# Build outputs
+android/app/build/
+ios/build/
+ios/Pods/
+
+# Metro bundler cache
+.metro-cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE settings
+.vscode/
+.idea/
+
+# Coverage
+coverage/
+
+
+# ======================
+# GOOGLE CREDENTIALS
+# ======================
+service-account.json
+
+# ======================
+# .NET / ASP.NET Core
+# ======================
+**/bin/
+**/obj/
+
+# User secrets (opcional)
+**/secrets.json

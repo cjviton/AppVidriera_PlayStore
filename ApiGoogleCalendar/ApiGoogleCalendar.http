@@ -1,0 +1,6 @@
+@ApiGoogleCalendar_HostAddress = http://localhost:5088
+
+GET {{ApiGoogleCalendar_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
