@@ -1,2 +1,0 @@
-“La aplicación se encuentra publicada en Google Play en el canal de prueba interna, 
-permitiendo la validación funcional con usuarios reales antes del despliegue definitivo.”
