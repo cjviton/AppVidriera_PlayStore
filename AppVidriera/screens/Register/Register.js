@@ -34,7 +34,7 @@ export default function Register({ navigation }) {
       return;
     }
 
-    fetch("http://10.0.2.2:5297/api/usuarios/register", {
+    fetch("http://84.247.139.234:5000/api/usuarios/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

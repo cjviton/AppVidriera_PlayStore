@@ -16,7 +16,7 @@ export default function Login({ navigation }) {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    fetch("http://10.0.2.2:5297/api/usuarios/login", {
+    fetch("http://84.247.139.234:5000/api/usuarios/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
