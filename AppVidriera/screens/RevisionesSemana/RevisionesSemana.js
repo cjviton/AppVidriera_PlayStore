@@ -19,7 +19,7 @@ export default function RevisionesSemana({ navigation }) {
             domingo.setHours(23, 59, 59, 999);
 
             const res = await fetch(
-                `http://10.0.2.2:5088/api/calendar/events?from=${hoy.toISOString()}&to=${domingo.toISOString()}`
+                `https://84-247-139-234.nip.io/gcal/api/Calendar/events?from=${hoy.toISOString()}&to=${domingo.toISOString()}`
             );
 
             const data = await res.json();

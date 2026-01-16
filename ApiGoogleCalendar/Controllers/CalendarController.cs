@@ -18,10 +18,14 @@ public class CalendarController : ControllerBase
     // GET: /api/calendar/events?from=2025-12-01&to=2025-12-31
     [HttpGet("events")]
     public async Task<IActionResult> GetEvents(
-     [FromQuery] DateTime from,
-     [FromQuery] DateTime to)
+    [FromQuery] DateTime? from,
+    [FromQuery] DateTime? to)
     {
-        var events = await _calendar.GetEventsAsync(from, to);
+        // Valores por defecto seguros
+        var fromDate = from ?? DateTime.UtcNow.AddMonths(-1);
+        var toDate = to ?? DateTime.UtcNow.AddMonths(1);
+
+        var events = await _calendar.GetEventsAsync(fromDate, toDate);
 
         return Ok(events.Select(e => new
         {
@@ -30,12 +34,12 @@ public class CalendarController : ControllerBase
             description = e.Description,
             colorId = e.ColorId,
             start = e.Start?.DateTimeDateTimeOffset?.ToString("o")
-            ?? e.Start?.Date,
+                    ?? e.Start?.Date,
             end = e.End?.DateTimeDateTimeOffset?.ToString("o")
-          ?? e.End?.Date
+                  ?? e.End?.Date
         }));
-
     }
+
 
 
 

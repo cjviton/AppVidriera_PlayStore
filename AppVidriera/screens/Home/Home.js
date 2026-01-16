@@ -45,7 +45,7 @@ export default function Home({ navigation }) {
 
   const fetchEventos = async (desde, hasta) => {
     const res = await fetch(
-      `http://10.0.2.2:5088/api/calendar/events?from=${encodeURIComponent(desde)}&to=${encodeURIComponent(hasta)}`
+      `https://84-247-139-234.nip.io/gcal/api/Calendar/events?from=${encodeURIComponent(desde)}&to=${encodeURIComponent(hasta)}`
     );
     return await res.json();
   };

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, FlatList, Alert } from "react-native";
 import styles from "./GestionEventosStyles";
 
-const API = "http://10.0.2.2:5088/api/calendar";
+const API = "https://84-247-139-234.nip.io/api/Calendar";
 
 export default function GestionEventos({ navigation }) {
     const [events, setEvents] = useState([]);

@@ -34,7 +34,7 @@ export default function Register({ navigation }) {
       return;
     }
 
-    fetch("http://84.247.139.234:5000/api/usuarios/register", {
+    fetch("https://84-247-139-234.nip.io/api/usuarios/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

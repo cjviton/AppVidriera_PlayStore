@@ -16,7 +16,7 @@ export default function Login({ navigation }) {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    fetch("http://84.247.139.234:5000/api/usuarios/login", {
+    fetch("https://84-247-139-234.nip.io/api/usuarios/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

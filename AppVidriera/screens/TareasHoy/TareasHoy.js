@@ -28,7 +28,7 @@ export default function TareasHoy({ navigation }) {
       ).toISOString();
 
       const res = await fetch(
-        `http://10.0.2.2:5088/api/calendar/events?from=${desde}&to=${hasta}`
+        `https://84-247-139-234.nip.io/gcal/api/Calendar/events?from=${desde}&to=${hasta}`
       );
 
       const data = await res.json();
