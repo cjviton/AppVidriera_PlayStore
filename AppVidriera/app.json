@@ -4,11 +4,11 @@
     "slug": "MiPrimeraApp",
     "version": "12.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icono.jpg",
+    "icon": "./assets/icono.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/logoMovil.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,15 +18,14 @@
     "android": {
       "versionCode": 12,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icono.jpg",
+        "foregroundImage": "./assets/icono.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.carlosjv.appvidriera",
-      "usesCleartextTraffic": true
+      "package": "com.carlosjv.appvidriera"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.jpg"
     },
     "extra": {
       "eas": {

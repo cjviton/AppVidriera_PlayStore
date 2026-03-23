@@ -24,7 +24,7 @@ export default function Register({ navigation }) {
     }
 
     // 🔒 Validación de dominio corporativo
-    const dominioEmpresa = "@lavidrierarandina.com";
+    const dominioEmpresa = "@vidrierarandina.com";
 
     if (!email.toLowerCase().endsWith(dominioEmpresa)) {
       Alert.alert(
